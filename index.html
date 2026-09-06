@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شعله — ردیاب عادت‌های روزانه</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">شعله</span>
+      <span class="brand-sub">هر روز یه قدم، یه شعله روشن‌تر</span>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="تغییر حالت روز و شب">
+      <span id="themeIcon">☾</span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-number">
+      <span id="todayPercent">0</span><span class="hero-unit">٪</span>
+    </div>
+    <p class="hero-label" id="heroLabel">هنوز امروز رو شروع نکردی</p>
+    <div class="hero-bar">
+      <div class="hero-bar-fill" id="heroBarFill"></div>
+    </div>
+  </section>
+
+  <section class="add-habit">
+    <input type="text" id="habitInput" placeholder="یه عادت جدید بنویس، مثلاً «۱۰ دقیقه پیاده‌روی»" maxlength="60">
+    <button id="addHabitBtn">افزودن</button>
+  </section>
+
+  <section class="habit-list" id="habitList">
+    <!-- habits injected here -->
+  </section>
+
+  <p class="empty-state" id="emptyState">هنوز عادتی اضافه نکردی. یکی رو بالا بنویس و شروع کن.</p>
+
+  <footer class="footnote">
+    <span id="streakSummary"></span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
